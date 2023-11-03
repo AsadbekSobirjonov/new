@@ -6,4 +6,5 @@ module com.example.demo7 {
 
     opens com.example.demo7 to javafx.fxml;
     exports com.example.demo7;
+
 }
