@@ -50,7 +50,20 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager" selected="Application.TriangleService">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.sobirjonovproject.oop.math.Main" />
+      <module name="wrapper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.sobirjonovproject.oop.math.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TriangleService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.sobirjonovproject.oop.triangle.TriangleService" />
       <module name="wrapper" />
@@ -73,6 +86,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.TriangleService" />
       </list>
     </recent_temporary>
@@ -87,7 +101,7 @@
       <updated>1699019309412</updated>
       <workItem from="1699019310627" duration="893000" />
       <workItem from="1699020680987" duration="1266000" />
-      <workItem from="1699022213920" duration="1726000" />
+      <workItem from="1699022213920" duration="3103000" />
     </task>
     <servers />
   </component>
