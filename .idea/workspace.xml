@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20ac9336-94c9-49e0-8028-0725cbf66e74" name="Changes" comment="" />
+    <list default="true" id="9e84a7b2-e7a2-4b09-b83f-44876a166346" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +20,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2XewQAFCejjhpdwyd6tOIVpujg0" />
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="2XfTo7ImGEsWpPWN6e7ZMXpROa5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -30,33 +42,26 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager">
-    <configuration name="Java" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java" />
-      <module name="demo7" />
+    <configuration name="SobirjonovProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SobirjonovProject" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.sobirjonovproject.SobirjonovProjectApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Java" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="20ac9336-94c9-49e0-8028-0725cbf66e74" name="Changes" comment="" />
-      <created>1699002835331</created>
+      <changelist id="9e84a7b2-e7a2-4b09-b83f-44876a166346" name="Changes" comment="" />
+      <created>1699019309412</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1699002835331</updated>
-      <workItem from="1699002836492" duration="1328000" />
-      <workItem from="1699017988628" duration="66000" />
-      <workItem from="1699018319628" duration="314000" />
+      <updated>1699019309412</updated>
+      <workItem from="1699019310627" duration="893000" />
+      <workItem from="1699020680987" duration="1266000" />
     </task>
     <servers />
   </component>
