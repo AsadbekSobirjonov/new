@@ -11,6 +11,28 @@ public class Triangle {
         this.c = c;
     }
 
+    public double getA() {
+        return a;
+    }
+
+    public double getB() {
+        return b;
+    }
+
+    public double getC() {
+        return c;
+    }
+
+    public double getArea() {
+        double s = (a+b+c) / 2;
+        return Math.sqrt(s * (s - a) * (s - b) * (s - c));
+    }
+
+    public double getPerimeter() {
+        return a+b+c;
+    }
+
+
 
 
 }
