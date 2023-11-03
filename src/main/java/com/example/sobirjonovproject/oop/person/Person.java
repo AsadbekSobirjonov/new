@@ -1,4 +1,4 @@
-package com.example.sobirjonovproject.oop.car;
+package com.example.sobirjonovproject.oop.person;
 
 public class Person {
     private String ism;

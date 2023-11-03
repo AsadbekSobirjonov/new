@@ -1,4 +1,4 @@
-package com.example.sobirjonovproject.oop.car;
+package com.example.sobirjonovproject.oop.triangle;
 
 public class Triangle {
     private double a;
