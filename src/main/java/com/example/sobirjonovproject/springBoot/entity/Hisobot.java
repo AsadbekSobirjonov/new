@@ -1,23 +1,29 @@
 package com.example.sobirjonovproject.springBoot.entity;
 
-
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
-import java.io.Serializable;
+import java.time.LocalDateTime;
+import java.util.Set;
+
 @Entity
 @Data
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@Table(name = "bolim")
-@Builder
-public class Bolim implements Serializable {
+@Table(name = "hisobot")
+public class Hisobot{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    String name;
+    Set<String> reklama_turi;
+    Double  reklama_xarajati;
+    String reklama_muddati;
+    LocalDateTime boshlangan_vaqt;
+
+    @ManyToOne
+    Xodim xodim;
 }

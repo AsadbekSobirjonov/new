@@ -27,7 +27,7 @@ public class MijozController {
         Mijoz mijoz=mijozService.updete(id, updeteMijoz);
         return ResponseEntity.ok(mijoz);
     }
-    @GetMapping("/finById")
+    @GetMapping("/finById/{id}")
     public ResponseEntity getByIs(@PathVariable Long id){
         Optional<Mijoz> result=mijozService.findById(id);
         return ResponseEntity.ok(result);

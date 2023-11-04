@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/bolim")
+@CrossOrigin(value = "*")
 public class BolimController {
  private final BolimRepository bolimRepository;
 
@@ -15,7 +16,22 @@ public class BolimController {
         this.bolimRepository = bolimRepository;
     }
 
-    @PostMapping("save")
+
+    @PostMapping("/boshqaruv")
+    public Bolim boshqaruv(){
+        return Bolim.builder().id(1L).name("Boshqaruv").build();
+    }
+
+    @PostMapping("/mijozlar")
+    public Bolim mijozlar(){
+        return Bolim.builder().id(2L).name("Mijozlar").build();
+    }
+
+    @PostMapping("/savdo")
+    public Bolim savdo(){
+        return Bolim.builder().id(3L).name("Savdo").build();
+    }
+    @PostMapping("/save")
     public ResponseEntity save(Bolim bolim){
         Bolim result=bolimRepository.save(bolim);
         return ResponseEntity.ok(result);
