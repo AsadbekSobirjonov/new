@@ -2,7 +2,10 @@ package com.example.sobirjonovproject.springBoot.service;
 
 import com.example.sobirjonovproject.springBoot.entity.Xodim;
 import com.example.sobirjonovproject.springBoot.repository.XodimRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.Year;
 import java.util.NoSuchElementException;
@@ -39,5 +42,10 @@ public class XodimService {
     public Xodim finById(Long id){
       return xodimRepository.findById(id)
                 .orElseThrow(()->new NoSuchElementException("Xodim with ID " + id + " not found"));
+    }
+
+    @Transactional(readOnly = true)
+    public Page<Xodim> findAll(Pageable pageable){
+        return  xodimRepository.findAll(pageable);
     }
 }

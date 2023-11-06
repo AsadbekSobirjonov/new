@@ -20,4 +20,5 @@ public class Bolim implements Serializable {
     Long id;
 
     String name;
+
 }

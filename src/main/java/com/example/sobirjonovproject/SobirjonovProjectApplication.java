@@ -8,6 +8,7 @@ import static org.springframework.boot.SpringApplication.*;
 public class SobirjonovProjectApplication {
 
     public static void main(String[] args) {
+
         run(SobirjonovProjectApplication.class, args);
     }
 

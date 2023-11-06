@@ -1,7 +1,10 @@
 package com.example.sobirjonovproject.springBoot.controller;
 
+import com.example.sobirjonovproject.springBoot.entity.Hisobot;
 import com.example.sobirjonovproject.springBoot.entity.Xodim;
 import com.example.sobirjonovproject.springBoot.service.XodimService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -37,6 +40,11 @@ public class XodimController {
     @GetMapping("/get")
     public ResponseEntity getById(@PathVariable Long id){
         Xodim result=xodimService.finById(id);
+        return ResponseEntity.ok(result);
+    }
+    @GetMapping("getAll/paging")
+    public ResponseEntity getAllPaging(Pageable pageable){
+        Page<Xodim> result=xodimService.findAll(pageable);
         return ResponseEntity.ok(result);
     }
 }
