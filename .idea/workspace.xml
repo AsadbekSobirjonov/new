@@ -162,7 +162,8 @@
       <workItem from="1699019310627" duration="893000" />
       <workItem from="1699020680987" duration="1266000" />
       <workItem from="1699022213920" duration="16430000" />
-      <workItem from="1699242566925" duration="7959000" />
+      <workItem from="1699242566925" duration="9800000" />
+      <workItem from="1699417633732" duration="4361000" />
     </task>
     <servers />
   </component>
@@ -174,7 +175,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/sobirjonovproject/springBoot/service/StatistikaService.java</url>
-          <line>86</line>
+          <line>100</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

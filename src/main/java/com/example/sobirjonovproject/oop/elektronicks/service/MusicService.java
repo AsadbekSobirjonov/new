@@ -1,12 +1,16 @@
 package com.example.sobirjonovproject.oop.elektronicks.service;
 
+import com.example.sobirjonovproject.oop.elektronicks.entity.Elektronicks;
+import com.example.sobirjonovproject.oop.elektronicks.entity.Loudspeaker;
 import com.example.sobirjonovproject.oop.elektronicks.entity.Music;
 import com.example.sobirjonovproject.oop.elektronicks.entity.Subwoofer;
 
 import java.util.List;
 
-public class SubwooferService  {
+public class MusicService {
     private Subwoofer subwoofer;
+    private Loudspeaker loudspeaker;
+    private Elektronicks elektronicks;
 
 
     public Music addMusic(Music name){
@@ -14,7 +18,7 @@ public class SubwooferService  {
         music1.add(name);
         return name;
     }
-    private void deleteMusic(Music name){
+    private void deleteMusic(String name){
         subwoofer.getMusiclar().remove(name);
     }
     private void valueplus(){
@@ -35,6 +39,17 @@ public class SubwooferService  {
         }
         return null;
     }
+    public Loudspeaker MusicToxtatish(){
+       loudspeaker.setOvoz(false);
+       return loudspeaker;
+    }
+    public Loudspeaker MusicBoshla(){
+        loudspeaker.setOvoz(true);
+        return loudspeaker;
+    }
+
+
+
 
 }
 
