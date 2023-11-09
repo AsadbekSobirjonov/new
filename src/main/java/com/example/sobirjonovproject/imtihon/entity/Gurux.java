@@ -1,5 +1,9 @@
 package com.example.sobirjonovproject.imtihon.entity;
 
+import lombok.*;
+import lombok.experimental.FieldDefaults;
+
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Set;
 
@@ -19,6 +23,9 @@ public class Gurux implements Serializable {
 
     @OneToMany
     Set<Student> student;
+
+    @OneToOne
+    Teacher teacher;
 
 
 

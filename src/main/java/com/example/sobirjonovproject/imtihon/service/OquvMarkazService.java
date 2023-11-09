@@ -1,8 +1,15 @@
-package com.example.sobirjonovproject.imtihon.repository.service;
+package com.example.sobirjonovproject.imtihon.service;
 
 import com.example.sobirjonovproject.imtihon.entity.Gurux;
 import com.example.sobirjonovproject.imtihon.entity.OquvMarkaz;
 import com.example.sobirjonovproject.imtihon.repository.OquvMarkazRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Set;
 
 @Service
 public class OquvMarkazService {
@@ -21,7 +28,7 @@ public class OquvMarkazService {
         oquvMarkazRepository.deleteById(id);
     }
 
-    public Set<OquvMarkaz> getAllGurux(Long id){
+    public Set<Gurux> getAllGurux(Long id){
         OquvMarkaz oquvMarkaz=oquvMarkazRepository.findById(id)
                 .orElseThrow(()->new NoSuchElementException("oquvMarkaz with ID " + id + " not found"));
         Set<Gurux> guruxlar=oquvMarkaz.getGurux();
@@ -33,9 +40,8 @@ public class OquvMarkazService {
                 .orElseThrow(()->new NoSuchElementException("O'quvMarkaz with ID " + id + " not found"));
     }
 
-    @Transactional(readOnly = true)
-    public Page<OquvMarkaz> findAll(Pageable pageable){
-        return  guruxRepository.findAll(pageable);
-    }
+   public List<OquvMarkaz> findAll(){
+        return oquvMarkazRepository.findAll();
+   }
 }
-}
+

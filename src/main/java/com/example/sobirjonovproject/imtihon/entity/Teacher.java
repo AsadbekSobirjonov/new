@@ -1,6 +1,9 @@
 package com.example.sobirjonovproject.imtihon.entity;
 
-import java.io.Serializable;
+import lombok.*;
+import lombok.experimental.FieldDefaults;
+
+import javax.persistence.*;
 
 @Entity
 @Data
@@ -8,13 +11,16 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@Table(name = "bolim")
-@Build
-public class Bolim implements Serializable {
+@Table(name = "teacher")
+public class Teacher {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
     String name;
 
+    String first_name;
+
+    Integer age;
 }

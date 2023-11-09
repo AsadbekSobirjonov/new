@@ -1,9 +1,12 @@
-package com.example.sobirjonovproject.imtihon.repository.service;
+package com.example.sobirjonovproject.imtihon.service;
 
 import com.example.sobirjonovproject.imtihon.entity.Gurux;
 import com.example.sobirjonovproject.imtihon.entity.Student;
 import com.example.sobirjonovproject.imtihon.repository.GuruxRepository;
+import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Set;
 
 @Service
@@ -35,9 +38,8 @@ public class GuruxService {
                 .orElseThrow(()->new NoSuchElementException("gurux with ID " + id + " not found"));
     }
 
-    @Transactional(readOnly = true)
-    public Page<Gurux> findAll(Pageable pageable){
-        return  guruxRepository.findAll(pageable);
-    }
+   public List<Gurux> finAll(){
+        return guruxRepository.findAll();
+   }
 }
-}
+

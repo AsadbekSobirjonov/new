@@ -1,6 +1,13 @@
 package com.example.sobirjonovproject.imtihon.Controller;
 
 import com.example.sobirjonovproject.imtihon.entity.Student;
+import com.example.sobirjonovproject.imtihon.service.StudentService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/student")
@@ -20,15 +27,15 @@ public class StudentController {
         studentService.deleteById(id);
         return ResponseEntity.ok("Student malumotlari o'chirildi");
         }
-        @GetMapping("/get")
+        @GetMapping("/get/{id}")
         public ResponseEntity getById(@PathVariable Long id){
         Student result=studentService.finById(id);
         return ResponseEntity.ok(result);
         }
-        @GetMapping("getAll/paging")
-        public ResponseEntity getAllPaging(Pageable pageable){
-        Page<Student> result=studentService.findAll(pageable);
-        return ResponseEntity.ok(result);
+        @GetMapping("/getall")
+        public ResponseEntity getAll(){
+                List<Student> result=studentService.findall();
+                return ResponseEntity.ok(result);
         }
 
         }

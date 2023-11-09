@@ -1,5 +1,9 @@
 package com.example.sobirjonovproject.imtihon.entity;
 
+import lombok.*;
+import lombok.experimental.FieldDefaults;
+
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Set;
 

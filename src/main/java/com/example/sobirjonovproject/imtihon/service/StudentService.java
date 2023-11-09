@@ -1,4 +1,16 @@
-package com.example.sobirjonovproject.imtihon.repository.service;
+package com.example.sobirjonovproject.imtihon.service;
+
+import com.example.sobirjonovproject.imtihon.entity.Student;
+import com.example.sobirjonovproject.imtihon.repository.StudentRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+import javax.transaction.Transactional;
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Set;
+
 @Service
 public class StudentService {
     private final StudentRepository studentRepository;
@@ -19,10 +31,11 @@ public class StudentService {
                 .orElseThrow(()->new NoSuchElementException("Student with ID " + id + " not found"));
     }
 
-    @Transactional(readOnly = true)
-    public Page<Student> findAll(Pageable pageable){
-        return  studentRepository.findAll(pageable);
+
+    public List<Student> findall(){
+        List<Student> students= studentRepository.findAll();
+        return students;
     }
 }
 
-}
+
